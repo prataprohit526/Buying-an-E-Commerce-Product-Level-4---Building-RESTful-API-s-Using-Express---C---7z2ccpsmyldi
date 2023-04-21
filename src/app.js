@@ -18,7 +18,7 @@ const patchMiddleware = (req, res, next) => {
   } else if (fetchData.quantity < 1) {
     return res.status(404).json({
       status: "success",
-      message: `${fetchData.name} , Out of stock!`,
+      message: `${fetchData.name}, Out of stock!`,
     });
   }
   res.json({
